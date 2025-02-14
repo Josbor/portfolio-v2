@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
 
             {/* Desktop: Image on right */}
-            <div className="hidden md:block md:w-1/2 flex justify-center">
+            <div className="hidden  md:w-1/2 md:flex justify-center">
               <div className="relative w-72 h-72">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profilePic.jpg-yCzb2hsRtVfCvBHdOmmTdez3raRs5j.jpeg"

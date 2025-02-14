@@ -8,7 +8,9 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { Menu } from "lucide-react"
 import { useState } from "react"
 import { useLanguage } from "../contexts/LanguageContext"
+//import cv from "../assets/EN_JOSE_BORREGO_CV.pdf"
 
+//import document from '../../public/assets/'
 const menuItems = {
   en: [
     { href: "#about", label: "About" },
@@ -56,7 +58,7 @@ export default function Header() {
 
           {/* Desktop CV Button */}
           <Button asChild className="hidden md:inline-flex">
-            <a href="/CV-Jose-Borrego.pdf" download>
+            <a href={`/assets/${language.toUpperCase()}_JOSE_BORREGO_CV.pdf`} download={`[${language.toUpperCase()}] JOSE BORREGO CV.pdf`}>
               {language === "es" ? "Descargar CV" : "Download CV"}
             </a>
           </Button>

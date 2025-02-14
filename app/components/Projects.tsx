@@ -105,12 +105,14 @@ export default function Projects() {
   return (
     <AnimatedSection className="animate-in-scale">
       <section id="projects" className="py-20 px-6 bg-muted/50">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="md:container max-w-screen-xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center">
             {language === "es" ? "Mis Proyectos" : "My Projects"}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
+
+              // TO DO : make this code fragment into a component 
               <Card key={project.id} className="flex flex-col">
                 <CardHeader className="p-0">
                   <Image
@@ -132,14 +134,14 @@ export default function Projects() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex gap-2 justify-between p-4">
-                  <Button asChild variant="outline" className="flex-1">
+                <CardFooter className="flex-col md:flex-row gap-2">
+                  <Button asChild variant="outline" className="w-full">
                     <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
                       {language === "es" ? "Repositorio" : "Repository"}
                     </a>
                   </Button>
-                  <Button asChild className="flex-1">
+                  <Button asChild className="w-full">
                     <a href={project.deploy} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       {language === "es" ? "Ver Online" : "View Online"}
