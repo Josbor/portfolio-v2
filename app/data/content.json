@@ -150,6 +150,18 @@
       }
     }
   },
+  "thankYou": {
+    "es": {
+      "title": "¡Gracias por contactar!",
+      "description": "Hemos recibido tu mensaje. me pondre en contacto contigo pronto.",
+      "buttonText": "Volver a la página principal"
+    },
+    "en": {
+      "title": "Thank you for contacting!",
+      "description": "We have received your message. I will contact you soon.",
+      "buttonText": "Back to the main page"
+    }
+  },
   "experience": [
     {
       "title": {
