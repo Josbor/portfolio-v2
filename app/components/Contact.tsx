@@ -5,11 +5,11 @@ import { Textarea } from "@/components/ui/textarea";
 import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useRouter } from "next/navigation";
+import content from "../data/content.json";
 
 export default function Contact({ router }: { router: ReturnType<typeof useRouter> }) {
   const { language } = useLanguage();
-
-  
+  const formFields = content.contact.formFields;
 
   // Define estados para los campos del formulario
   const [name, setName] = useState("");
@@ -51,7 +51,7 @@ export default function Contact({ router }: { router: ReturnType<typeof useRoute
             <AnimatedSection className="animate-in-left">
               <Input
                 type="text"
-                placeholder={language === "es" ? "Nombre" : "Name"}
+                placeholder={formFields.name[language]}
                 value={name}
                 onChange={handleNameChange}
                 required
@@ -60,7 +60,7 @@ export default function Contact({ router }: { router: ReturnType<typeof useRoute
             <AnimatedSection className="animate-in-left">
               <Input
                 type="email"
-                placeholder={language === "es" ? "Correo Electrónico" : "Email"}
+                placeholder={formFields.email[language]}
                 value={email}
                 onChange={handleEmailChange}
                 required
@@ -68,14 +68,14 @@ export default function Contact({ router }: { router: ReturnType<typeof useRoute
             </AnimatedSection>
             <AnimatedSection className="animate-in-left">
               <Textarea
-                placeholder={language === "es" ? "Mensaje" : "Message"}
+                placeholder={formFields.message[language]}
                 value={message}
                 onChange={handleMessageChange}
                 required
               />
             </AnimatedSection>
             <Button type="submit">
-              {language === "es" ? "Enviar" : "Send"}
+              {formFields.submit[language]}
             </Button>
           </form>
         </div>
