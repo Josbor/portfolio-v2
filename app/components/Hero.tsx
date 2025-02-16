@@ -3,27 +3,11 @@ import Image from "next/image"
 import { ScrollLink } from "./ScrollLink"
 import AnimatedSection from "./AnimatedSection"
 import { useLanguage } from "../contexts/LanguageContext"
-
-const content = {
-  en: {
-    title: "José Borrego",
-    subtitle: "Frontend Developer passionate about creating incredible web experiences",
-    description:
-      "I am a web developer with experience in creating modern and responsive web applications. I specialize in frontend technologies such as React, Next.js, and TypeScript, and have a strong interest in user interface design and user experience.",
-    cta: "Contact Me",
-  },
-  es: {
-    title: "José Borrego",
-    subtitle: "Desarrollador Frontend apasionado por crear experiencias web increíbles",
-    description:
-      "Soy un desarrollador web con experiencia en la creación de aplicaciones web modernas y responsivas. Me especializo en tecnologías frontend como React, Next.js y TypeScript, y tengo un fuerte interés en el diseño de interfaces de usuario y la experiencia del usuario.",
-    cta: "Contáctame",
-  },
-}
+import content from "../data/content.json"
 
 export default function Hero() {
   const { language } = useLanguage()
-  const { title, subtitle, description, cta } = content[language]
+  const { title, subtitle, description, cta } = content.hero[language]
 
   return (
     <AnimatedSection>

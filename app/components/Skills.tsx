@@ -1,29 +1,11 @@
 import { Badge } from "@/components/ui/badge"
 import AnimatedSection from "./AnimatedSection"
 import { useLanguage } from "../contexts/LanguageContext"
-
-const skills = [
-  "HTML5",
-  "CSS3",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Styled Components",
-  "Tailwind CSS",
-  "Git",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "PostgreSQL",
-  "RESTful APIs",
-  "GraphQL",
-  "Jest",
-  "Cypress",
-]
+import content from "../data/content.json"
 
 export default function Skills() {
   const { language } = useLanguage()
+  const skills = content.skills
 
   return (
     <AnimatedSection className="animate-in-scale">
