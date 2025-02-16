@@ -2,21 +2,32 @@
   "skills": [
     "HTML5",
     "CSS3",
-    "JavaScript",
-    "TypeScript",
+    "Javascript",
+    "Typescript",
+    "Php",
+    "Sql",
     "React",
+    "React Native",
+    "Redux",
     "Next.js",
-    "Styled Components",
-    "Tailwind CSS",
-    "Git",
     "Node.js",
-    "Express",
-    "MongoDB",
-    "PostgreSQL",
-    "RESTful APIs",
+    "Api Rest",
     "GraphQL",
-    "Jest",
-    "Cypress"
+    "Angular",
+    "RXJS",
+    "Tailwind",
+    "Sass",
+    "Material ui",
+    "tailwind-material",
+    "Angular material",
+    "Firebase",
+    "Git",
+    "Figma",
+    "Firebase",
+    "REST APIs",
+    "ChatGPT",
+    "Botpress"
+  
   ],
   "projects": [
     {
@@ -112,13 +123,13 @@
   ],
   "hero": {
     "en": {
-      "title": "José Borrego",
+      "title": "Jose Borrego",
       "subtitle": "Frontend Developer passionate about creating incredible web experiences",
       "description": "I am a web developer with experience in creating modern and responsive web applications. I specialize in frontend technologies such as React, Next.js, and TypeScript, and have a strong interest in user interface design and user experience.",
       "cta": "Contact Me"
     },
     "es": {
-      "title": "José Borrego",
+      "title": "Jose Borrego",
       "subtitle": "Desarrollador Frontend apasionado por crear experiencias web increíbles",
       "description": "Soy un desarrollador web con experiencia en la creación de aplicaciones web modernas y responsivas. Me especializo en tecnologías frontend como React, Next.js y TypeScript, y tengo un fuerte interés en el diseño de interfaces de usuario y la experiencia del usuario.",
       "cta": "Contáctame"
@@ -128,7 +139,7 @@
     "github": "https://github.com/Josbor",
     "linkedin": "https://www.linkedin.com/in/josbor/",
     "email": "mailto:josbor.dev@gmail.com",
-    "copyright": "2023 José Borrego. Todos los derechos reservados."
+    "copyright": "2025 Jose Borrego. Todos los derechos reservados."
   },
   "contact": {
     "formFields": {
@@ -153,12 +164,12 @@
   "thankYou": {
     "es": {
       "title": "¡Gracias por contactar!",
-      "description": "Hemos recibido tu mensaje. me pondre en contacto contigo pronto.",
+      "description": "he recibido tu mensaje. me pondre en contacto contigo pronto.",
       "buttonText": "Volver a la página principal"
     },
     "en": {
       "title": "Thank you for contacting!",
-      "description": "We have received your message. I will contact you soon.",
+      "description": "I have received your message. I will contact you soon.",
       "buttonText": "Back to the main page"
     }
   },
@@ -166,7 +177,7 @@
     {
       "title": {
         "en": "Frontend Developer at Marxa Digital, Mexico",
-        "es": "Desarrollador Frontend en Marxa Digital, México"
+        "es": "Desarrollador Frontend en Marxa Digital, Mexico"
       },
       "type": {
         "en": "Remote",
@@ -195,7 +206,7 @@
           "Participación activa en ceremonias Agile (dailies, sprint planning, demos)."
         ]
       },
-      "techStack": ["Angular", "TypeScript", "Tailwind CSS", "Firebase", "Node.js", "REST APIs"]
+      "techStack": ["Angular","Angular Material", "TypeScript", "Tailwind CSS", "Firebase", "Node.js", "REST APIs", "ChatGPT", "Botpress"]
     },
     {
       "title": {

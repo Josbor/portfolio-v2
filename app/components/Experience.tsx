@@ -10,8 +10,8 @@ export default function Experience() {
 
   return (
     <AnimatedSection>
-      <section id="experience" className="py-20 px-6 bg-muted/50">
-        <div className="container max-w-screen-xl mx-auto">
+      <section id="experience" className="py-20  px-6 bg-muted/50">
+        <div className=" md:container max-w-screen-xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center">
             {language === "es" ? "Experiencia Laboral" : "Work Experience"}
           </h2>
