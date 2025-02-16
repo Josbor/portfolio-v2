@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <AnimatedSection className="animate-in-scale">
       <section id="skills" className="py-20 px-6">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="md:container max-w-screen-xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center">
             {language === "es" ? "Mis Habilidades" : "My Skills"}
           </h2>
