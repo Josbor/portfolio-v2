@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="md:hidden w-48 h-48 relative mb-6">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profilePic.jpg-yCzb2hsRtVfCvBHdOmmTdez3raRs5j.jpeg"
-                alt="José Borrego"
+                alt="Jose Borrego"
                 fill
                 className="rounded-full object-cover"
                 priority
@@ -39,7 +39,7 @@ export default function Hero() {
               <div className="relative w-72 h-72">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profilePic.jpg-yCzb2hsRtVfCvBHdOmmTdez3raRs5j.jpeg"
-                  alt="José Borrego"
+                  alt="Jose Borrego"
                   fill
                   className="rounded-full object-cover"
                   priority
