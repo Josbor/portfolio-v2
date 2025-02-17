@@ -7,8 +7,8 @@ import type React from "react" // Added import for React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "José Borrego - Frontend Developer",
-  description: "Portfolio de José Borrego, desarrollador frontend especializado en React y Next.js",
+  title: "Jose Borrego - Frontend Developer",
+  description: "Portfolio de Jose Borrego, desarrollador frontend especializado en React y Next.js",
     generator: 'v0.dev'
 }
 
