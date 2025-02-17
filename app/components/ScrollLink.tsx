@@ -7,23 +7,20 @@ interface ScrollLinkProps {
   href: string
   children: React.ReactNode
   className?: string
-  onClick?: () => void
 }
 
-export function ScrollLink({ href, children, className ,onClick}: ScrollLinkProps) {
+export function ScrollLink({ href, children, className }: ScrollLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const target = document.querySelector(href)
     if (target) {
-      const offsetTop = target.getBoundingClientRect().top + window.pageYOffset
+      const offsetTop = target.getBoundingClientRect().top + window.pageYOffset + (window.innerWidth <= 768 ? 0 : 300)
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
       })
     }
-    if (onClick) {
-      onClick()
-    }
+ 
   }
 
   return (

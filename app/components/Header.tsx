@@ -6,22 +6,24 @@ import { ThemeToggle } from "./ThemeToggle"
 import { LanguageToggle } from "./LanguageToggle"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
-import { useState } from "react"
+import { MouseEventHandler, useState } from "react"
 import { useLanguage } from "../contexts/LanguageContext"
-//import cv from "../assets/EN_JOSE_BORREGO_CV.pdf"
+import { cn } from "@/lib/utils"
+import { debounce } from "lodash"
 
-//import document from '../../public/assets/'
 const menuItems = {
   en: [
     { href: "#about", label: "About" },
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
+    { href: "#skills", label: "Skills" },
     { href: "#contact", label: "Contact" },
   ],
   es: [
     { href: "#about", label: "Sobre mí" },
     { href: "#projects", label: "Proyectos" },
     { href: "#experience", label: "Experiencia" },
+    { href: "#skills", label: "Habilidades" },
     { href: "#contact", label: "Contacto" },
   ],
 }
@@ -30,10 +32,27 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const { language } = useLanguage()
 
-  const handleLinkClick = () => {
-    setIsOpen(false)
-  }
+ 
+const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, { href, label }: { href: string; label: string; }) => {
+      
+      event.preventDefault()
+      console.log('paso')
+      
+      const target = document.querySelector(href)
+      if (target) {
+        const offsetTop = target.getBoundingClientRect().top + window.scrollY + (window.innerWidth >= 768 ? 0:300 )
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        })
+      }
+    
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 1000);
 
+  
+  }
   return (
     <header className="py-4 px-6 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-40 w-full border-b border-border/40">
       <div className="container flex max-w-screen-xl items-center justify-between">
@@ -78,20 +97,16 @@ export default function Header() {
                 <ul className="space-y-4">
                   {menuItems[language].map((item) => (
                     <li key={item.href}>
-                      <ScrollLink
-                        href={item.href}
-                        className="flex items-center py-2 text-lg hover:text-primary transition-colors"
-                        onClick={handleLinkClick}
-                      >
-                        {item.label}
-                      </ScrollLink>
+                      <a href={item.href} onClick={(e)=>handleLinkClick(e,item)} className={"flex items-center py-2 text-lg hover:text-primary transition-colors"}>
+                       {item.label}
+                          </a>
                     </li>
                   ))}
                   <li className="pt-4 border-t">
                     <Button asChild className="w-full">
                       <a href={`/assets/${language.toUpperCase()}_JOSE_BORREGO_CV.pdf`} download={`[${language.toUpperCase()}] JOSE BORREGO CV.pdf`}>
                         {language === "es" ? "Descargar CV" : "Download CV"}
-                      </a>
+       </a>
                     </Button>
                   </li>
                 </ul>
