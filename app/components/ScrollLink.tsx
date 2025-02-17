@@ -7,9 +7,10 @@ interface ScrollLinkProps {
   href: string
   children: React.ReactNode
   className?: string
+  onClick?: () => void
 }
 
-export function ScrollLink({ href, children, className }: ScrollLinkProps) {
+export function ScrollLink({ href, children, className ,onClick}: ScrollLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const target = document.querySelector(href)
@@ -19,6 +20,9 @@ export function ScrollLink({ href, children, className }: ScrollLinkProps) {
         top: offsetTop,
         behavior: "smooth",
       })
+    }
+    if (onClick) {
+      onClick()
     }
   }
 

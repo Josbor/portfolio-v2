@@ -89,7 +89,7 @@ export default function Header() {
                   ))}
                   <li className="pt-4 border-t">
                     <Button asChild className="w-full">
-                      <a href="/CV-Jose-Borrego.pdf" download>
+                      <a href={`/assets/${language.toUpperCase()}_JOSE_BORREGO_CV.pdf`} download={`[${language.toUpperCase()}] JOSE BORREGO CV.pdf`}>
                         {language === "es" ? "Descargar CV" : "Download CV"}
                       </a>
                     </Button>
