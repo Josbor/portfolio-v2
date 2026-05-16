@@ -1,33 +1,38 @@
 {
   "skills": [
-    "HTML5",
-    "CSS3",
-    "Javascript",
-    "Typescript",
-    "Php",
-    "Sql",
+    "JavaScript",
+    "TypeScript",
+    "PHP",
+    "SQL",
+    "HTML",
+    "CSS",
+    "SCSS",
     "React",
-    "React Native",
-    "Redux",
     "Next.js",
-    "Node.js",
-    "Api Rest",
-    "GraphQL",
     "Angular",
-    "RXJS",
-    "Tailwind",
+    "Redux",
+    "RxJS",
+    "React Native",
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "GraphQL",
+    "Tailwind CSS",
+    "Material UI",
+    "Angular Material",
     "Sass",
-    "Material ui",
-    "tailwind-material",
-    "Angular material",
+    "AWS S3",
+    "AWS Lambda",
+    "AWS AppSync",
+    "AWS Amplify",
     "Firebase",
+    "SQL Server",
+    "ChatGPT API",
+    "Botpress",
     "Git",
     "Figma",
-    "Firebase",
-    "REST APIs",
-    "ChatGPT",
-    "Botpress"
-  
+    "Jira",
+    "Agile/Scrum"
   ],
   "projects": [
     {
@@ -124,14 +129,14 @@
   "hero": {
     "en": {
       "title": "Jose Borrego",
-      "subtitle": "Frontend Developer passionate about creating incredible web experiences",
-      "description": "I am a web developer with experience in creating modern and responsive web applications. I specialize in frontend technologies such as React, Next.js, and TypeScript, and have a strong interest in user interface design and user experience.",
+      "subtitle": "Full Stack Software Engineer · React · Angular · Node.js · AWS · AI",
+      "description": "Full Stack Developer with 4+ years of experience building scalable ERP systems, SaaS platforms, and AI-integrated solutions. I work end-to-end with React, Angular, Node.js, and AWS (S3, Lambda, AppSync), with a strong focus on clean code, performance, and UI/UX aligned with business goals.",
       "cta": "Contact Me"
     },
     "es": {
       "title": "Jose Borrego",
-      "subtitle": "Desarrollador Frontend apasionado por crear experiencias web increíbles",
-      "description": "Soy un desarrollador web con experiencia en la creación de aplicaciones web modernas y responsivas. Me especializo en tecnologías frontend como React, Next.js y TypeScript, y tengo un fuerte interés en el diseño de interfaces de usuario y la experiencia del usuario.",
+      "subtitle": "Ingeniero de Software Full Stack · React · Angular · Node.js · AWS · IA",
+      "description": "Desarrollador Full Stack con más de 4 años de experiencia construyendo sistemas ERP escalables, plataformas SaaS y soluciones integradas con IA. Trabajo de punta a punta con React, Angular, Node.js y AWS (S3, Lambda, AppSync), con foco en clean code, rendimiento y experiencias UI/UX alineadas al negocio.",
       "cta": "Contáctame"
     }
   },
@@ -139,7 +144,7 @@
     "github": "https://github.com/Josbor",
     "linkedin": "https://www.linkedin.com/in/josbor/",
     "email": "mailto:josbor.dev@gmail.com",
-    "copyright": "2025 Jose Borrego. Todos los derechos reservados."
+    "copyright": "2026 Jose Borrego. Todos los derechos reservados."
   },
   "contact": {
     "formFields": {
@@ -176,37 +181,71 @@
   "experience": [
     {
       "title": {
-        "en": "Frontend Developer at Marxa Digital, Mexico",
-        "es": "Desarrollador Frontend en Marxa Digital, Mexico"
+        "en": "Full Stack Developer at Defontana",
+        "es": "Desarrollador Full Stack en Defontana"
       },
       "type": {
-        "en": "Remote",
-        "es": "Remoto"
+        "en": "Enterprise ERP (Latam) — Remote",
+        "es": "ERP Empresarial (Latam) — Remoto"
+      },
+      "period": "Marzo 2025 – Actualidad",
+      "achievements": {
+        "en": [
+          "Led development of the Budget Module from scratch (~50 tasks): full CRUD lifecycle (monthly/annual), comparative and chronological reporting, bulk data import, and multi-accounting with multi-currency support.",
+          "Built report system with preview, advanced filters, Excel download via S3 pre-signed URLs, and zero-balance toggle.",
+          "Developed bulk import pipeline: S3 upload → AWS Lambda async processing → AWS AppSync + Amplify real-time polling → visual progress feedback.",
+          "Integrated AI-powered assisted budget entry, compatibility validation, model training notifications, and predictive reporting features.",
+          "Implemented real-time AWS AppSync subscriptions for automatic UI refresh after AI processing.",
+          "Delivered Approval Flow Module (OC & RIM, ~15 tasks): CRUD operations, state transitions, amount-range validation, reset endpoints, and onboarding tours using reactour.",
+          "Migrated cascade balance recalculation endpoint to AWS Lambda URL for improved scalability and performance.",
+          "Resolved ~10 production bugs involving deletion issues, form validation, duplicate requests, and decimal precision handling."
+        ],
+        "es": [
+          "Lideré el desarrollo del módulo de Presupuesto desde cero (~50 tareas): ciclo CRUD completo (mensual/anual), reportes comparativos y cronológicos, importación masiva y soporte multi-moneda/multi-contabilidad.",
+          "Construí sistema de reportes con preview, filtros avanzados, descarga Excel mediante URLs pre-firmadas S3 y opción de balance cero.",
+          "Desarrollé pipeline de importación masiva: S3 upload → procesamiento async Lambda → polling en tiempo real con AppSync + Amplify → feedback visual de progreso.",
+          "Integré funcionalidades IA para asistencia de presupuestos, validaciones de compatibilidad y reportes predictivos.",
+          "Implementé subscriptions AWS AppSync en tiempo real para actualización automática de interfaz tras procesos IA.",
+          "Entregué módulo Approval Flow (OC & RIM, ~15 tareas): CRUD, validaciones, transiciones de estado, reset endpoints y onboarding tours con reactour.",
+          "Migré endpoint de recálculo balance cascade hacia AWS Lambda URL mejorando escalabilidad y performance.",
+          "Resolví ~10 bugs productivos relacionados a validaciones, requests duplicados y manejo decimal."
+        ]
+      },
+      "techStack": ["React", "Node.js", "REST APIs", "AWS S3", "AWS Lambda", "AWS AppSync", "AWS Amplify", "GraphQL", "Figma", "Jira", "Agile"]
+    },
+    {
+      "title": {
+        "en": "Frontend Developer at Marxa Digital",
+        "es": "Desarrollador Frontend en Marxa Digital"
+      },
+      "type": {
+        "en": "Remote (Mexico)",
+        "es": "Remoto (México)"
       },
       "period": "Agosto 2022 – Diciembre 2024",
       "achievements": {
         "en": [
-          "Development of a loyalty module with an intelligent appointment system synchronized to customer registration dates.",
-          "Redesign of web platform with a mobile-first approach, improving loading speed by 35% through lazy loading.",
-          "Migration of CSS styles to Tailwind for standardization and reuse of components.",
-          "Integration of ChatGPT API for predictive sales analysis in Node.js.",
-          "Refactoring of data processing module to support XLSX/CSV files.",
-          "Implementation of conversational chatbot with dynamic flows using Botpress.",
-          "Resolution of critical bugs in key ERP modules, reducing system errors by 20%.",
-          "Active participation in Agile ceremonies (dailies, sprint planning, demos)."
+          "Built loyalty module with smart appointment scheduling synchronized to customer registration dates, including maintenance reminders and observations.",
+          "Redesigned company platform with a mobile-first approach, improving load speed by 35% through lazy loading and optimization techniques.",
+          "Migrated CSS architecture to Tailwind CSS, improving component reusability and reducing stylesheet overhead.",
+          "Developed sales analytics application using ChatGPT API and Node.js cloud functions for Excel analysis and inventory prediction.",
+          "Refactored import modules to support XLSX and CSV formats with improved parsing logic.",
+          "Built adaptive chatbot conversation flows using Botpress.",
+          "Fixed critical ERP bugs, reducing system-wide errors by 20%.",
+          "Participated in Agile/Scrum ceremonies including standups, sprint planning, and demos."
         ],
         "es": [
-          "Desarrollo de módulo de fidelización con sistema de citas inteligentes sincronizado a fechas de registro de clientes.",
-          "Rediseño de plataforma web con enfoque mobile-first, mejorando la velocidad de carga en un 35% mediante lazy loading.",
-          "Migración de estilos CSS a Tailwind para estandarización y reutilización de componentes.",
-          "Integración de API de ChatGPT para análisis predictivo de ventas en Node.js.",
-          "Refactorización de módulo de procesamiento de datos para soporte de archivos XLSX/CSV.",
-          "Implementación de chatbot conversacional con flujos dinámicos usando Botpress.",
-          "Resolución de bugs críticos en módulos ERP clave, reduciendo errores del sistema en un 20%.",
-          "Participación activa en ceremonias Agile (dailies, sprint planning, demos)."
+          "Construí módulo de fidelización con agendamiento inteligente sincronizado con fechas de registro, incluyendo recordatorios de mantenimiento y observaciones.",
+          "Rediseñé plataforma web mobile-first mejorando velocidad de carga en un 35% mediante lazy loading y técnicas de optimización.",
+          "Migré arquitectura CSS completa hacia Tailwind CSS, mejorando reutilización de componentes y reduciendo overhead de estilos.",
+          "Desarrollé aplicación analítica usando ChatGPT API y Node.js para análisis Excel y predicción de inventario.",
+          "Refactoricé módulos de importación XLSX/CSV mejorando parsing y compatibilidad.",
+          "Construí chatbot dinámico usando Botpress.",
+          "Corregí bugs críticos ERP reduciendo errores del sistema en un 20%.",
+          "Participé activamente en ceremonias Agile/Scrum."
         ]
       },
-      "techStack": ["Angular","Angular Material", "TypeScript", "Tailwind CSS", "Firebase", "Node.js", "REST APIs", "ChatGPT", "Botpress"]
+      "techStack": ["Angular", "TypeScript", "Tailwind CSS", "Firebase", "Node.js", "RxJS", "Angular Material", "REST APIs", "ChatGPT", "Botpress"]
     },
     {
       "title": {
@@ -220,18 +259,18 @@
       "period": "Mayo 2019 – Junio 2020",
       "achievements": {
         "en": [
-          "Development of automated printing module using optimized SQL queries and PHP scripts on the server.",
-          "Complete redesign of the personnel management system interface (look and feel) to improve usability.",
-          "Update of the reports module with React, Node.js and SQL to optimize report generation (partial work, project under development during my participation).",
-          "Review of reusable stored procedures to support new system modules.",
-          "Improvement of frontend-backend interaction through efficient SQL queries and optimization of data flows."
+          "Developed automated printing modules using optimized SQL queries and PHP scripts, improving operational efficiency.",
+          "Redesigned personnel management system interface to improve usability and visual consistency.",
+          "Upgraded reporting modules with React and Node.js, improving UX and report generation speed.",
+          "Created reusable stored procedures to accelerate development of new modules.",
+          "Improved frontend-backend communication through optimized SQL queries and API interactions."
         ],
         "es": [
-          "Desarrollo de módulo de impresión automatizada mediante consultas SQL optimizadas y scripts PHP en servidor.",
-          "Rediseño completo de la interfaz del sistema de gestión de personal (look and feel) para mejorar usabilidad.",
-          "Actualización del módulo de reportes con React, Node.js y SQL para optimizar generación de informes (trabajo parcial, proyecto en desarrollo durante mi participación).",
-          "Revisión de stored procedures reutilizables para soporte de nuevos módulos del sistema.",
-          "Mejora de interacción frontend-backend mediante consultas SQL eficientes y optimización de flujos de datos."
+          "Desarrollé módulos de impresión automatizada usando SQL optimizado y PHP, mejorando eficiencia operativa.",
+          "Rediseñé sistema de gestión de personal mejorando usabilidad y consistencia visual.",
+          "Modernicé módulo de reportes usando React y Node.js, mejorando UX y velocidad de generación de informes.",
+          "Creé stored procedures reutilizables acelerando nuevos desarrollos.",
+          "Mejoré comunicación frontend-backend mediante queries y APIs optimizadas."
         ]
       },
       "techStack": ["React.js", "Node.js", "PHP", "SQL Server", "JavaScript", "Git"]
