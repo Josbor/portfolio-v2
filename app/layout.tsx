@@ -7,9 +7,10 @@ import type React from "react" // Added import for React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Jose Borrego - Frontend Developer",
-  description: "Portfolio de Jose Borrego, desarrollador frontend especializado en React y Next.js",
-    generator: 'v0.dev'
+  title: "Jose Borrego - Full Stack Software Engineer",
+  description:
+    "Portfolio de Jose Borrego, ingeniero de software full stack especializado en React, Angular, Node.js, AWS e integración con IA.",
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -25,7 +26,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
